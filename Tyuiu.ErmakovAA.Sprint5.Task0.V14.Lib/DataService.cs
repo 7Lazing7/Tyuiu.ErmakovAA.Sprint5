@@ -6,6 +6,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task0.V14.Lib
     {
         public string SaveToFileTextData(int x)
         {
+            // string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt"; 
             string[] paths = { Path.GetTempPath(), Path.GetTempFileName() };
             string path = Path.Combine(paths);
 
