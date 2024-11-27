@@ -7,8 +7,8 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task2.V29.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
-            string[] paths = { Path.GetTempPath() };
-            string path = Path.Combine("OutPutFileTask2.csv");
+            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask2.csv";
+          
 
             FileInfo fileInfo = new FileInfo(path);
 
