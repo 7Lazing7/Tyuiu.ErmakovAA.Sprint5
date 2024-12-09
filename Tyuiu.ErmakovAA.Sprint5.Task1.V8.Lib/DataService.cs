@@ -16,17 +16,20 @@ public class DataService : ISprint5Task1V8
         {
             File.Delete(path);
         }
+        double y;
+        string strY;
 
         for (int x = startValue; x <= stopValue; x++)
         {
-            double y = Math.Round((4 - 2 * x) + (2 + Math.Cos(x)) / (2 * x - 2), 2);
-            string strY = Convert.ToString(y);
+            if (Math.Cos(x) + 2 == 1) strY = "0";
+            else strY = Convert.ToString(Math.Round((4 - 2 * x) + (2 + Math.Cos(x)) / (2 * x - 2), 2));
 
             if (x != stopValue)
             {
                 File.AppendAllText(path, strY + Environment.NewLine);
             }
-            else
+
+            else 
             {
                 File.AppendAllText(path, strY);
             }
