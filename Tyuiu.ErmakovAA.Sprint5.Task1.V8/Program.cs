@@ -6,7 +6,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task1.V8
         static void Main(string[] args)
         {
             int startValue = -5;
-            int stopVaule = -5;
+            int stopVaule = 5;
 
             DataService ds = new DataService();
 
