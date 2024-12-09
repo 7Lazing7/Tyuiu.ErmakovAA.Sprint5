@@ -6,8 +6,8 @@ public class DataService : ISprint5Task1V8
 {
     public string SaveToFileTextData (int startValue, int stopValue)
     {
-        string[] paths = { Path.GetTempPath(), Path.GetTempFileName() };
-        string path = Path.Combine(paths);
+        string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask1.txt" });
+        
 
         FileInfo fileInfo = new FileInfo(path);
         bool fileExist = fileInfo.Exists;
@@ -35,6 +35,7 @@ public class DataService : ISprint5Task1V8
         }
         return path;
     }
+    
 }
 
 
