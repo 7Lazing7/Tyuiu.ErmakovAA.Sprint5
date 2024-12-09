@@ -19,7 +19,7 @@ public class DataService : ISprint5Task1V8
 
         for (int x = startValue; x <= stopValue; x++)
         {
-            double y = Math.Round((4 - 2 * x) + (2 + Math.Cos(x) / 2 * x - 2), 2);
+            double y = Math.Round((4 - 2 * x) + (2 + Math.Cos(x)) / (2 * x - 2), 2);
             string strY = Convert.ToString(y);
 
             if (x != stopValue)
