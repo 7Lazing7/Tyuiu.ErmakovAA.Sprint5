@@ -4,7 +4,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task1.V8.Lib;
 
 public class DataService : ISprint5Task1V8
 {
-    public string SaveToFileTextData(int startValue, int stopValue)
+    public string SaveToFileTextData (int startValue, int stopValue)
     {
         string[] paths = { Path.GetTempPath(), Path.GetTempFileName() };
         string path = Path.Combine(paths);
@@ -31,8 +31,9 @@ public class DataService : ISprint5Task1V8
                 File.AppendAllText(path, strY);
             }
 
-            return path;
+           
         }
+        return path;
     }
 }
 
