@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Text;
+using tyuiu.cources.programming.interfaces.Sprint5;
 namespace Tyuiu.ErmakovAA.Sprint5.Task3.V7.Lib
 {
     public class DataService : ISprint5Task3V7
@@ -16,22 +17,19 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task3.V7.Lib
                 File.Delete(path);
             }
 
-            if (x == 2) {
-                double y = Math.Round(1.6 * Math.Pow(x, 3) - 2.1 * Math.Pow(x, 2) + 7 * x, 3);
-                string strY = Convert.ToString(y);
+            if (x == 2)
+            {
+                double res = Math.Round(1.6 * Math.Pow(x, 3) - 2.1 * Math.Pow(x, 2) + 7 * x, 3);
 
-                if (x != 2)
+                using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
                 {
-                    File.AppendAllText(path, strY + Environment.NewLine);
+                    writer.Write(BitConverter.GetBytes(res));
                 }
 
-                else
-                {
-                    File.AppendAllText(path, strY);
-                }
+
+
+                
             }
-
-            
             return path;
         }
     }

@@ -23,14 +23,16 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task3.V7
 
             int x = 2;
             Console.WriteLine("x = " + x);
+            double res = Math.Round(1.6 * Math.Pow(x, 3) - 2.1 * Math.Pow(x, 2) + 7 * x, 3);
 
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                   *");
             Console.WriteLine("********************************************************************************");
 
-            string res = ds.SaveToFileTextData(x);
+            string result = ds.SaveToFileTextData(x);
 
-            Console.WriteLine("Файл: " + res);
+            Console.WriteLine( "OTVET " + res);
+            Console.WriteLine("Файл: " + result);
             Console.WriteLine("Создан!");
 
             Console.ReadKey();
