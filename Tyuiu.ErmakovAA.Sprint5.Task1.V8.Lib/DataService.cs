@@ -16,13 +16,14 @@ public class DataService : ISprint5Task1V8
         {
             File.Delete(path);
         }
-        double y;
+      
         string strY;
 
         for (int x = startValue; x <= stopValue; x++)
         {
-            if (Math.Cos(x) + 2 == 1) strY = "0";
-            else strY = Convert.ToString(Math.Round((4 - 2 * x) + (2 + Math.Cos(x)) / (2 * x - 2), 2));
+            if (x != 1 && x != 1 )
+            { strY = Convert.ToString(Math.Round((4 - 2 * x) + (2 + Math.Cos(x)) / (2 * x - 2), 2)); }
+            else { strY = "0"; }
 
             if (x != stopValue)
             {
@@ -44,3 +45,4 @@ public class DataService : ISprint5Task1V8
 
 
 
+//C:\Users\alexe\AppData\Local\Temp\OutPutFileTask1.txt
