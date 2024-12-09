@@ -16,10 +16,10 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task2.V29
 
             Console.Title = "Спринт #3 | Выполгил: Ермаков А.А. | ПКТб-24-1";
             Console.WriteLine("********************************************************************************");
-            Console.WriteLine("* Спринт #                                                                     *");
+            Console.WriteLine("* Спринт # 5                                                                   *");
             Console.WriteLine("* Тема: Создание итогового решения по спринту                                  *");
-            Console.WriteLine("* Задание #                                                                    *");
-            Console.WriteLine("* Вариант #                                                                    *");
+            Console.WriteLine("* Задание # 2                                                                  *");
+            Console.WriteLine("* Вариант # 29                                                                 *");
             Console.WriteLine("* Выполнил: Ермаков А.А.                                                       *");
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
