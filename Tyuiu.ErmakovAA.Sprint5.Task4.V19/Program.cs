@@ -20,7 +20,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task4.V19
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
             Console.WriteLine("********************************************************************************");
 
-            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask4V19";
+            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask4";
 
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                   *");
