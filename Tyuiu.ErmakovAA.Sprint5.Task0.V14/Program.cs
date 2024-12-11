@@ -10,12 +10,12 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task0.V14
 
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #3 | Выполгил: Ермаков А.А. | ПКТб-24-1";
+            Console.Title = "Спринт #5 | Выполгил: Ермаков А.А. | ПКТб-24-1";
             Console.WriteLine("********************************************************************************");
-            Console.WriteLine("* Спринт #3                                                                    *");
+            Console.WriteLine("* Спринт #5                                                                    *");
             Console.WriteLine("* Тема: Создание итогового решения по спринту                                  *");
             Console.WriteLine("* Задание #0                                                                   *");
-            Console.WriteLine("* Вариант #6                                                                   *");
+            Console.WriteLine("* Вариант #4                                                                   *");
             Console.WriteLine("* Выполнил: Ермаков А.А.                                                       *");
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
