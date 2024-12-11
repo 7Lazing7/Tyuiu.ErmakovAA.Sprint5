@@ -14,7 +14,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task3.V7
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* Спринт #5                                                                    *");
             Console.WriteLine("* Тема: Создание итогового решения по спринту                                  *");
-            Console.WriteLine("* Задание #0                                                                   *");
+            Console.WriteLine("* Задание #3                                                                   *");
             Console.WriteLine("* Вариант #8                                                                   *");
             Console.WriteLine("* Выполнил: Ермаков А.А.                                                       *");
             Console.WriteLine("********************************************************************************");
