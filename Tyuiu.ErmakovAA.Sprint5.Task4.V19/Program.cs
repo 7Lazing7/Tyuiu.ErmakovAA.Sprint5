@@ -20,7 +20,9 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task4.V19
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
             Console.WriteLine("********************************************************************************");
 
-            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask4";
+            string path = $@"{Directory.GetCurrentDirectory()}\DataSprint5\InPutDataFileTask4V19.txt";
+
+            Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                   *");
@@ -28,7 +30,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task4.V19
 
             double res = ds.LoadFromDataFile(path);
 
-            Console.WriteLine(res);
+            Console.WriteLine("OTVET" + res);
             Console.ReadKey();
         }
     }

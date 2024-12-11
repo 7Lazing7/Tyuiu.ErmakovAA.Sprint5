@@ -6,9 +6,9 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task4.V19.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string strx = File.ReadAllText(path);
-            
-            double ret = Math.Pow((Convert.ToDouble (strx) / Math.Cos(Convert.ToDouble(strx))), 2);
+            string strX = File.ReadAllText(path);
+            strX = strX.Replace('.', ',');
+            double ret = Math.Pow((Convert.ToDouble (strX) / Math.Cos(Convert.ToDouble(strX))), 2);
             Math.Round (ret, 3);
             return ret;
         }
