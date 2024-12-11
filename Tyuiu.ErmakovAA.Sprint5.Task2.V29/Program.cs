@@ -14,7 +14,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task2.V29
 
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #3 | Выполгил: Ермаков А.А. | ПКТб-24-1";
+            Console.Title = "Спринт #5 | Выполгил: Ермаков А.А. | ПКТб-24-1";
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* Спринт # 5                                                                   *");
             Console.WriteLine("* Тема: Создание итогового решения по спринту                                  *");
