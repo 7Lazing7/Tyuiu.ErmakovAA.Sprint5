@@ -7,10 +7,10 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task2.V29.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
-            string[] paths = { Path.GetTempPath(), Path.GetTempFileName() };
-            string path = Path.Combine("OutPutFileTask2.csv");
+            string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask2.csv" });
 
             FileInfo fileInfo = new FileInfo(path);
+            bool fileExist = fileInfo.Exists;
 
             if (fileInfo.Exists)
             {

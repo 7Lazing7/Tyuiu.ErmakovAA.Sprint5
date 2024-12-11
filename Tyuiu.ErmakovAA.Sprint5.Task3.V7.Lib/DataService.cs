@@ -8,7 +8,6 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task3.V7.Lib
         {
             string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask3.bin" });
 
-
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;
 
