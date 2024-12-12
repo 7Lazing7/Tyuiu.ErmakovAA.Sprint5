@@ -5,15 +5,33 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task6.V30.Test
     [TestClass]
     public sealed class DataServiceTest
     {
-     
-        [TestMethod]
-        public void ValideCalc()
-        {
-            string path = @"D:\Рабочий Стол\DataSprint5\InPutDataFileTask6V13.txt";
-            DataService ds = new DataService();
-            var res = ds.LoadFromDataFile(path);
-            int wait = 8;
-            Assert.AreEqual(wait, res);
+   
+            [TestMethod]
+            public void ValidCalc()
+            {
+                DataService ds = new DataService();
+                string[] paths = { @"c:\DataSprint5", "InPutDataFileTask6V29.txt" };
+                string fullPath = Path.Combine(paths);
+
+                var res = ds.LoadFromDataFile(fullPath);
+                int wait = 1;
+                Assert.AreEqual(wait, res);
+
+
+
+            }
+
+            [TestMethod]
+            public void LoadFromDataFile()
+            {
+                string[] paths = { @"c:\DataSprint5", "InPutDataFileTask6V29.txt" };
+                string fullPath = Path.Combine(paths);
+
+                FileInfo fileInfo = new FileInfo(fullPath);
+                bool fileExist = fileInfo.Exists;
+                bool wait = true;
+                Assert.AreEqual(wait, fileExist);
+
+            }
         }
     }
-}

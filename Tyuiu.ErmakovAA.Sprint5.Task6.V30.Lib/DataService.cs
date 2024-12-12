@@ -10,22 +10,23 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task6.V30.Lib
         {
             string[] paths = { Path.GetTempPath(), Path.GetTempFileName() };
             path = Path.Combine("InPutDataFileTask6V30.txt");
+
             int count = 0;
             using (StreamReader reader = new StreamReader(path))
             {
+
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
+                    var words = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-                    for (int i = 0; i < line.Length; i++)
-                    {
-                        
-                            count += 1;
-                       
-                    }
+
+                    count += words.Count(word => word.Length == 8);
                 }
+                return count;
+
+
             }
-            return count;
         }
     }
 }
