@@ -17,7 +17,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task5.V2.Lib
                 foreach (var line in lines)
                 {
                     // Пробуем преобразовать строку в число
-                    if (double.TryParse(line, NumberStyles.Float, CultureInfo.InvariantCulture, out double number))
+                    if (double.TryParse(line.Trim(), NumberStyles.Float, CultureInfo.InvariantCulture, out double number))
                     {
                         // Проверяем, является ли число положительным
                         if (number > 0)
@@ -26,30 +26,32 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task5.V2.Lib
                             count++;
                         }
                     }
+                    else
+                    {
+                        Console.WriteLine($"Не удалось преобразовать строку: '{line.Trim()}'");
+                    }
                 }
 
                 // Вычисление среднего значения
-                double average = count > 0 ? sum / count : 0;
-
-                // Округление до трёх знаков после запятой
-                return Math.Round(average, 3);
+                if (count > 0)
+                {
+                    double average = sum / count;
+                    return Math.Round(average, 3);
+                }
+                else
+                {
+                    Console.WriteLine("Нет положительных чисел для вычисления среднего.");
+                    return 0; // Если нет положительных чисел
+                }
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Ошибка: {e.Message}");
+                Console.WriteLine($"Ошибка при чтении файла: {e.Message}");
                 return 0; // Возвращаем 0 в случае ошибки
             }
         }
     }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            DataService loader = new DataService();
-            string filePath = @"C:\DataSprint5\InPutDataFileTask5V2.txt";
-            double average = loader.LoadFromDataFile(filePath);
-            Console.WriteLine($"Среднее всех положительных значений: {average}");
-        }
-    }
 }
+
+
+

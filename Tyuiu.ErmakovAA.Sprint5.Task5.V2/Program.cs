@@ -30,7 +30,13 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task5.V2
 
             Console.WriteLine("Среднее всех положительных значений: " + res);
             Console.ReadKey();
+
+
+            DataService loader = new DataService();
+                string filePath = @"C:\DataSprint5\InPutDataFileTask5V2.txt";
+                double average = loader.LoadFromDataFile(filePath);
+                Console.WriteLine($"Среднее всех положительных значений: {average}");
+           
         }
     }
-    
 }
