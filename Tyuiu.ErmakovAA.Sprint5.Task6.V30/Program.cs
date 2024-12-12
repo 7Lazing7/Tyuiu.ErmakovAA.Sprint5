@@ -19,7 +19,9 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task6.V30
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
             Console.WriteLine("********************************************************************************");
 
-            string path = Path.Combine(@"D:\Рабочий Стол\DataSprint5\InPutDataFileTask6V13.txt");
+            string[] paths = { Path.GetTempPath(), Path.GetTempFileName() };
+            string path = Path.Combine("InPutDataFileTask6V30.txt");
+
             Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("********************************************************************************");

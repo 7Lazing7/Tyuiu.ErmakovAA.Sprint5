@@ -10,11 +10,11 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task6.V30.Test
             public void ValidCalc()
             {
                 DataService ds = new DataService();
-                string[] paths = { @"c:\DataSprint5", "InPutDataFileTask6V29.txt" };
+                string[] paths = { @"C:\DataSprint5\InPutDataFileTask6V29.txt" };
                 string fullPath = Path.Combine(paths);
 
                 var res = ds.LoadFromDataFile(fullPath);
-                int wait = 1;
+                int wait = 0;
                 Assert.AreEqual(wait, res);
 
 
@@ -24,7 +24,7 @@ namespace Tyuiu.ErmakovAA.Sprint5.Task6.V30.Test
             [TestMethod]
             public void LoadFromDataFile()
             {
-                string[] paths = { @"c:\DataSprint5", "InPutDataFileTask6V29.txt" };
+                string[] paths = { @"C:\DataSprint5\InPutDataFileTask6V29.txt" };
                 string fullPath = Path.Combine(paths);
 
                 FileInfo fileInfo = new FileInfo(fullPath);
